@@ -1,9 +1,7 @@
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
-import ScoreCard from "./ScoreCard";
-import { Button, TextField, Typography } from "@mui/material";
+import { Button, TextField } from "@mui/material";
 import Cards from "./Cards";
-import Outcome from "./Outcome";
 import { stay, hit } from "../redux/actions/game";
 import { useState } from "react";
 

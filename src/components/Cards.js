@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { Back } from "../assets/cards";
+import React from "react";
 import "../style/Card.scss";
 
 const Cards = ({ card }) => {
