@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  background: green;
+  height: 100vh;
+  width: 100vw;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.alert-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,.5);
+  width: 100Vw;
+  animation: display-backdrop 6s ease;
+}
+
+.alert {
+  position: fixed;
+  top: -100px;
+  left: 50%;
+  transform: translate(-50%,0);
+  animation: drop-alert 6s ease;
+}
+
+@keyframes display-backdrop {
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+  .1%{
+    height: 100vh;
+  }
+  10% {
+    opacity: 1;
+  }
+  90%{
+    opacity: 1;
+  }
+  99.9%{
+    height: 100vh;
+  }
+  100% {
+    height: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes drop-alert {
+  0% {
+    top:-100px;
+  }
+  10% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  90%{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  100% {
+    top:-100px;
+  }
+}

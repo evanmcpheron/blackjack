@@ -1,0 +1,9 @@
+export const types = {
+  NEW_GAME: "NEW_GAME",
+  ADD_PLAYER: "ADD_PLAYER",
+  GET_SCORE: "GET_SCORE",
+  HIT: "HIT",
+  STAY: "STAY",
+  SET_ALERT: "SET_ALERT",
+  REMOVE_ALERT: "REMOVE_ALERT",
+};

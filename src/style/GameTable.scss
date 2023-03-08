@@ -1,0 +1,64 @@
+.game-table-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100vh;
+  .all-scores-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    text-align: center;
+    .score-card-container {
+      padding: 0 10px;
+      .score {
+        border: 1px solid black;
+        color: white;
+        background: black;
+        padding: 10px;
+        border-radius: 5px;
+      }
+    }
+    .wallet-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 10px;
+      .wallet {
+        border: 1px solid black;
+        color: white;
+        background: black;
+        padding: 10px;
+        border-radius: 5px;
+      }
+    }
+  }
+  .dealer-container {
+    display: flex;
+    justify-content: center;
+    .dealer-card-container {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .player-center-container {
+    .player-card-container {
+      display: flex;
+      justify-content: center;
+    }
+    .player-info-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      button {
+        height: 100%;
+        margin: 10px;
+
+      }
+
+    }
+  }
+}
